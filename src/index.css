@@ -5,3 +5,8 @@
 /* .App-Style {
   @apply flex justify-center items-center;
 } */
+
+body {
+  margin: 0;
+  padding: 0;
+}

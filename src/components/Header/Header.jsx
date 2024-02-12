@@ -1,14 +1,25 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import Logo from "../../assets/images.png";
 
 const Header = () => {
   return (
-    <header>
+    <header className="flex justify-between">
+      <span>
+        <h1 className="text-lg">LOGO</h1>
+      </span>
       <NavLink>
-        <>Home</>
-        <Link to={"/about"}>About Us</Link>
-        <ul>Login</ul>
-        <h1>Header</h1>
+        <ul className="flex justify-between gap-4">
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/about"}>About Us</Link>
+          </li>
+          <li>
+            <Link to={"/login"}>Login</Link>
+          </li>
+          <Link to={"/"}>Contact Us</Link>
+        </ul>
       </NavLink>
     </header>
   );
